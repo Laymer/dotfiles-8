@@ -15,8 +15,7 @@
 [alias]
     A = add -A
     amend = commit -S --amend
-    b = branch
-    br = branch -r
+    b = branch -rv
     c = commit -S
     cam = commit -S -am
     cm = commit -S -m
@@ -44,11 +43,11 @@
     ra = rebase --abort
     rao = remote add origin
     rc = rebase --continue
-    rl = reflog
+    rl = reflog --date=iso --decorate
     rom = rebase origin/master
     s = status -s
-    ss = status
     sl = shortlog
+    ss = status
     t = tag -s
     tl = tag --sort "v:refname"
     unstage = reset --soft HEAD
