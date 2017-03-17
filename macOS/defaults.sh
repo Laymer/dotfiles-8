@@ -2,9 +2,9 @@
 
 sudo -v
 
-sudo scutil --set ComputerName "muffintosh"
-sudo scutil --set HostName "muffintosh"
-sudo scutil --set LocalHostName "muffintosh"
+sudo scutil --set ComputerName "rushintosh"
+sudo scutil --set HostName "rushintosh"
+sudo scutil --set LocalHostName "rushintosh"
 
 # Disable audio feedback when volume is changed
 write com.apple.sound.beep.feedback -bool false
