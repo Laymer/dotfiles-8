@@ -75,6 +75,10 @@
 [credential]
     helper = osxkeychain
 
+[diff]
+    renames = copies
+    tool = vimdiff
+
 [difftool]
     prompt = false
 
@@ -83,7 +87,3 @@
 
 [push]
     default = simple
-
-[diff]
-    renames = copies
-
