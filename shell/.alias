@@ -25,7 +25,7 @@ function cdr {
 }
 
 function co {
-  g co `g b -r | f | awk '{ print $1 }' | cdr /`
+  g co `g b -r | rg -v HEAD | f | awk '{ print $1 }' | cdr /`
 }
 
 function ghe-clone {
