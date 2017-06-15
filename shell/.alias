@@ -10,27 +10,9 @@ function burk {
   ssh `burklee | fzf`.spotify.net
 }
 
-function github-clone {
-  TO=$HOME/repos/$1/$2
-  clone git@github.com:$1/$2.git $TO
-  pushd $TO
-}
-
-function car {
-  cut -d $1 -f 1
-}
-
-function cdr {
-  cut -d $1 -f 2-
-}
-
-function co {
-  g co `g b -r | rg -v HEAD | f | awk '{ print $1 }' | cdr /`
-}
-
 function ghe-clone {
   TO=$HOME/repos/spotify/$1/$2
-  clone git@ghe.spotify.net:$1/$2.git $TO
+  shallow git@ghe.spotify.net:$1/$2.git $TO
   pushd $TO
 }
 
