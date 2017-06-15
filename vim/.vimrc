@@ -122,7 +122,6 @@ set smartcase
 " Colors
 
 syntax on
-colorscheme pencil
 set cursorline
 set background=dark
 

@@ -84,6 +84,7 @@ Plugin 'tpope/vim-surround'
 
 " Theme
 Plugin 'flazz/vim-colorschemes'
+Plugin 'felixhummel/setcolors.vim'
 
 call vundle#end()
 
