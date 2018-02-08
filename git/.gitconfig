@@ -34,6 +34,7 @@
     d5 = diff HEAD~5
     dh = diff HEAD
     dm = diff master
+    dt = difftool
     fall = fetch --all
     l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an> (%G?)%Creset' --abbrev-commit
     lo = log --color --stat
@@ -51,6 +52,7 @@
     s = status -s
     sl = shortlog
     ss = status
+    autosquash = rebase -i --autosquash
     t = tag -s
     tl = tag --sort "v:refname"
     unstage = reset --soft HEAD
