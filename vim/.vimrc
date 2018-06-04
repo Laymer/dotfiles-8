@@ -32,6 +32,9 @@ inoremap jk <esc><esc>:w<cr>
 " never go into Ex mode
 noremap Q <Nop>
 
+" easy switch paste modes
+noremap <leader>x :set paste!<cr>
+
 " Git bindings
 nnoremap <leader>gc :Gcommit -S<cr>
 nnoremap <leader>gb :Gblame<cr>
@@ -121,7 +124,9 @@ set smartcase
 
 " Colors
 
+set termguicolors
 syntax on
+colorscheme molokai
 set cursorline
 set background=dark
 
