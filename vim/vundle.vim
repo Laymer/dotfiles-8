@@ -28,13 +28,19 @@ Plugin 'junegunn/goyo.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 
+" Syntax checker
+Plugin 'w0rp/ale'
+
 " Languages {
 
   Plugin 'vim-scripts/applescript.vim'
-  Plugin 'w0rp/ale'
   Plugin 'ekalinin/Dockerfile.vim'
   Plugin 'keith/swift.vim'
   Plugin 'tpope/vim-markdown'
+
+  " Bazel
+  Plugin 'bazelbuild/vim-ft-bzl'
+  Plugin 'durandj/bazel.vim'
 
   " Rust
   Plugin 'rust-lang/rust.vim'
@@ -51,6 +57,9 @@ Plugin 'airblade/vim-gitgutter'
   " JS Dialects
   Plugin 'leafgarland/typescript-vim'
   Plugin 'kchmck/vim-coffee-script'
+
+  " ReasonML
+  Bundle 'reasonml-editor/vim-reason'
 
   " HTML
   Plugin 'hail2u/vim-css3-syntax'
@@ -72,6 +81,12 @@ Plugin 'airblade/vim-gitgutter'
 
   " Java
   Plugin 'artur-shaik/vim-javacomplete2'
+
+  " GraphQL
+  Plugin 'jparise/vim-graphql'
+
+  " TOML
+  Plugin 'cespare/vim-toml'
 
 " }
 
