@@ -26,6 +26,9 @@
     cob = checkout -b
     cod = checkout development
     com = checkout master
+    cp = cherry-pick
+    cpa = cherry-pick --abort
+    cpc = cherry-pick --continue
     d = diff
     d1 = diff HEAD~1
     d2 = diff HEAD~2
@@ -36,10 +39,12 @@
     dm = diff master
     dt = difftool
     fall = fetch --all
+    fixup = commit --fixup
     l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an> (%G?)%Creset' --abbrev-commit
     lo = log --color --stat
     p = push
     pall = pull --all
+    patch = apply --reject --ignore-whitespace --ignore-space-change
     pod = push origin development
     pom = push origin master --tags
     pomfu = push origin master --tags --force --set-upstream
