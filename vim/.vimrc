@@ -170,19 +170,6 @@ nmap <leader>vs vip<LocalLeader>vs<CR>
 " JSON always nice looking
 autocmd FileType json :% ! jq .
 
-" Lisps
-autocmd FileType racket  call VimuxRunCommand("racket")
-autocmd FileType chicken call VimuxRunCommand("csi")
-autocmd FileType scheme  call VimuxRunCommand("csi")
-
-" Others
-autocmd FileType ruby   call VimuxRunCommand("irb")
-autocmd FileType python call VimuxRunCommand("py")
-
-autocmd FileType erlang set tags+=~/repos/otp/tags
-autocmd FileType rust   set tags+=~/repos/rust-lang/rust/tags
-autocmd FileType rust   set tags+=~/.cargo/registry/src/tags
-
 set exrc
 set secure
 
