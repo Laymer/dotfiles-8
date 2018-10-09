@@ -142,19 +142,28 @@ match OverLength /\%81v.\+/
 
 
 " Ale config
-
+filetype off
 let &runtimepath.=',~/.vim/bundle/ale'
+let g:ale_sign_column_always = 1
+let g:ale_fix_on_save = 1
+filetype plugin on
+
+let g:ale_fixers = {
+\   'javascript': ['prettier'],
+\}
+let g:ale_javascript_prettier_use_local_config = 1
 
 " Staturs line config
 let g:lightline = {
   \ 'colorscheme': 'wombat',
   \ 'component': {
-  \   'readonly': '%{&readonly?"⭤":""}',
+  \   'readonly': '%{&readonly?"RO":""}',
   \ },
   \ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
   \ 'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" }
   \ }
 
+let g:markdown_fenced_languages = ['js=javascript']
 
 function! VimuxSlime()
   call VimuxSendText(@v)
@@ -181,5 +190,3 @@ if filereadable(_hostfile)
 endif
 
 set hidden
-let g:racer_cmd = "$HOME/.cargo/bin/racer"
-let $RUST_SRC_PATH="$HOME/repos/rust-lang/rust/src"
